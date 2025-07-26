@@ -1,0 +1,116 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+header {
+  background-color: #5d3a00;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #d9c4a1;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5d3a00;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #5d3a00;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto 80px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+ul.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column; /* ← 縦並びにする */
+  margin-bottom: 20px;
+}
+
+.customer-info {
+  flex-direction: column; /* ← 縦並びにする */
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: auto; /* ← 強制幅を解除 */
+}
+
+.contact-form .form-group textarea {
+  flex: 1;
+  min-height: 120px;
+  resize: vertical; /* ← 任意。ユーザーが縦に広げられるようにする */
+}
+
+footer {
+  background-color: #5d3a00;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

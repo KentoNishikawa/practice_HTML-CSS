@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonBucks - お問い合わせ</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>MoonBucks</h1>
+        <p>心地よい空間とこだわりのコーヒーをあなたに</p>
+    </header>
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="menu.html">メニュー</a>
+        <a href="about.html">お店について</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>お問い合わせ</h2>
+            <p>MoonBucksに関するご質問やお問い合わせはこちらのフォームからお気軽にどうぞ。</p>
+            <form class="contact-form">
+                <div class="customer-info">
+                    <label>お名前：</label>
+                    <input type="text" name="name" placeholder="お名前を入力してください">
+                </div>
+
+                <div class="customer-info">
+                    <label>メール：</label>
+                    <input type="email" name="email" placeholder="メールを入力してください">
+                </div>
+
+                <div class="customer-info">
+                    <label>住所：</label>
+                    <select name="address">
+                        <option value="">-- 選択してください --</option>
+                        <option value="八王子市">八王子市</option>
+                        <option value="府中市">府中市</option>
+                        <option value="立川市">立川市</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>知ったきっかけ：</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="source" value="知人"> 知人</label>
+                        <label><input type="checkbox" name="source" value="紹介記事"> 紹介記事</label>
+                        <label><input type="checkbox" name="source" value="SNS口コミ"> SNS口コミ</label>
+                        <label><input type="checkbox" name="source" value="ネット広告"> ネット広告</label>
+                        <label><input type="checkbox" name="source" value="その他"> その他</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>お問い合わせ内容：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="type" value="予約"> 予約に関して</label>
+                        <label><input type="radio" name="type" value="メニュー"> メニューに関して</label>
+                        <label><input type="radio" name="type" value="求人"> 求人に関して</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">お問い合わせ詳細：</label>
+                    <textarea id="details" name="details" placeholder="お問い合わせ内容を入力してください"></textarea>
+                </div>
+
+                <div class="submit-btn">
+                    <button type="submit">送信</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 MoonBucks. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
